@@ -2,8 +2,6 @@ class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         if len(strs) == 1:
             return [strs]
-        
-        letter_count_str = {}
 
         sorted_str_list = []
 
