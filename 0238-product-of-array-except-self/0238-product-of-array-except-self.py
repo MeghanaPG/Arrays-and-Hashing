@@ -21,6 +21,3 @@ class Solution:
             result[i] = prefix_product[i] * suffix_product[i]
         
         return result
-
-
-
