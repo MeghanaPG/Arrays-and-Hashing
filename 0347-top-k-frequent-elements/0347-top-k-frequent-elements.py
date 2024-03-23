@@ -15,5 +15,3 @@ class Solution:
         key_value_pairs = counter.most_common(k)
         top_k_elements = [pair[0] for pair in key_value_pairs]
         return top_k_elements
-            
-            
