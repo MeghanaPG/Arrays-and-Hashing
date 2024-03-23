@@ -22,6 +22,4 @@ class Solution:
                 count_dict_t[letter] = 1 
 
         return count_dict_s == count_dict_t 
-
-
-            
+        
