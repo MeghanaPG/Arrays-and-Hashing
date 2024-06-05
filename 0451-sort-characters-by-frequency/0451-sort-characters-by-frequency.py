@@ -1,6 +1,7 @@
 class Solution:
     def frequencySort(self, s: str) -> str:
         # Time Complexity: O(nlogm)
+        # Heap can also be used to sort 
         countChar = {}
         # res = ""
 
