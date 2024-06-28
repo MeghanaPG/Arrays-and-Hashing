@@ -22,3 +22,4 @@ class Solution:
                 anagram_hash_table[key] = [strs[i]]
 
         return list(anagram_hash_table.values())  
+        
