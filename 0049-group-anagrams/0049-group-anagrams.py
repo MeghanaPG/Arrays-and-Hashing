@@ -5,19 +5,19 @@ class Solution:
         
         sorted_str_list = []
 
-        anagram_hashtable = {}
+        anagram_hash_table = {}
 
         for each in strs:
             str_list = list(each)
             str_list.sort()
             sorted_str = "".join(str_list)
             sorted_str_list.append(sorted_str)
-
         
         for i, key in enumerate(sorted_str_list):
-            if key in anagram_hashtable:
-                anagram_hashtable[key].append(strs[i])
+            if key in anagram_hash_table:
+                anagram_hash_table[key].append(strs[i])
             else:
-                anagram_hashtable[key] = [strs[i]]
+                anagram_hash_table[key] = [strs[i]]
         
-        return list(anagram_hashtable.values())
+        return list(anagram_hash_table.values())
+            
