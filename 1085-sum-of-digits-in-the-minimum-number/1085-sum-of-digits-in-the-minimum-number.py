@@ -1,6 +1,6 @@
 class Solution:
     def sumOfDigits(self, nums: List[int]) -> int:
-        # Time Complexity:
+        # Time Complexity: O(n)
 
         min_num = min(nums)
     
