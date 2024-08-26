@@ -1,14 +1,16 @@
-from typing import List
-
 class Solution:
     def largestNumber(self, nums: List[int]) -> str:
-        # Convert numbers to strings and define custom sorting function
-        nums = sorted(map(str, nums), key=lambda x: x*10, reverse=True)
-        
-        # Handle the case where all numbers are 0
-        if nums[0] == '0':
-            return '0'
-        
-        # Concatenate the sorted strings to form the largest number
-        return ''.join(nums)
+        # Time Complexity: 
+        for i, n in enumerate(nums):
+            nums[i] = str(n)
 
+        def compare(n1, n2):
+            if n1 + n2 > n2 + n1:
+                return -1
+            else:
+                return 1 
+
+        nums = sorted(nums, key=cmp_to_key(compare))
+
+        # int and str again to handle the leading zeros
+        return str(int("".join(nums)))
