@@ -1,6 +1,6 @@
 class Solution:
     def majorityElement(self, nums: List[int]) -> List[int]:
-        # time complexity: O(n)
+        # Time Complexity: O(n)
         my_dict = {}
         res = []
         n = len(nums)
@@ -20,3 +20,5 @@ class Solution:
                 res.append(key)
         
         return res
+
+        
