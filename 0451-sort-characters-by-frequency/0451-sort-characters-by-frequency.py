@@ -1,23 +1,17 @@
 class Solution:
     def frequencySort(self, s: str) -> str:
-        # Time Complexity: O(nlogm)
-        # Heap can also be used to sort 
-        countChar = {}
-        # res = ""
+        # Time Complexity: O(n)
+        freqMap = {}
 
-        for i in range(len(s)):
-            if s[i] in countChar:
-                countChar[s[i]] += 1 
+        for c in s:
+            if c in freqMap:
+                freqMap[c] += 1
             else:
-                countChar[s[i]] = 1 
+                freqMap[c] = 1 
             
-            # sortedcountChar = [x:x for lambda]
         
-        sortedDict = dict(sorted(countChar.items(), key = lambda item: item[1], reverse = True))
-
-        # print(sortedDict)
-
-        res = "".join([k * v for k,v in sortedDict.items()])
+        sorted_char = sorted(freqMap.items(), key = lambda x:x[1], reverse= True)
+        
+        res = ''.join(char*count for char, count in sorted_char)
 
         return res 
-        
