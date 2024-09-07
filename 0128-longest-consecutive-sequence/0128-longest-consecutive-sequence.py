@@ -5,8 +5,9 @@ class Solution:
 
         for n in nums:
             length = 0 
-            if n-1 not in numSet:
+            if n - 1 not in numSet:
                 while n + length in numSet:
-                    length += 1 
+                    length += 1
                 longest = max(longest, length)
-        return longest 
+        return longest
+        
