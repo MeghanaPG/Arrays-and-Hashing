@@ -1,5 +1,5 @@
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+class Solution(object):
+    def twoSum(self, nums, target):
         my_hash = {}
         
         for i, n in enumerate(nums):
@@ -11,3 +11,11 @@ class Solution:
             my_hash[n] = i 
         
         return None
+
+
+    
+        
+        
+                
+
+        
