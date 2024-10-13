@@ -1,10 +1,5 @@
-class Solution(object):
-    def isAnagram(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: bool
-        """
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
         count_dict_s = {}
         count_dict_t = {}
 
@@ -22,5 +17,3 @@ class Solution(object):
                 count_dict_t[c] += 1
         
         return count_dict_s == count_dict_t
-
-        
