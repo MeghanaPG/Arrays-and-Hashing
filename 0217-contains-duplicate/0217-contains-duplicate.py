@@ -3,7 +3,6 @@ class Solution:
         seen = set()
         for n in nums:
             if n in seen:
-               return True 
+                return True 
             seen.add(n)
-        return False 
-            
+        return False
