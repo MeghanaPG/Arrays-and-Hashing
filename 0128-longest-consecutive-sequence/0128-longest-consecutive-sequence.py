@@ -10,4 +10,3 @@ class Solution:
                     length += 1
                 longest = max(longest, length)
         return longest
-        
