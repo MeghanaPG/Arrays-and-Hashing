@@ -7,10 +7,13 @@ class Solution:
 
         anagram_hash_table = {}
 
+        # for each in strs:
+        #     str_list = list(each)
+        #     str_list.sort()
+        #     sorted_str = "".join(str_list)
+        #     sorted_str_list.append(sorted_str)
         for each in strs:
-            str_list = list(each)
-            str_list.sort()
-            sorted_str = "".join(str_list)
+            sorted_str = "".join(sorted(each))
             sorted_str_list.append(sorted_str)
 
         for i, key in enumerate(sorted_str_list):
